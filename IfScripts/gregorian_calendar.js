@@ -3,7 +3,7 @@
 //leap year.
 
 //the year that we are testing
-let givenYear = 1900;
+let givenYear = 2024;
 
 let isLeapYear = false;
 
@@ -32,10 +32,16 @@ else{
     isLeapYear = false;
 }
 
-//Different outputs based on if the isLeapYear boolean is true or false to reflect the answer.
-if(isLeapYear == true){
-    console.log("The year " + givenYear + " is/was a leap year.");
+//Different outputs based on isLeapYear and if it's before or after 2023.
+if(isLeapYear == true && givenYear >= 2023){
+    console.log("The year " + givenYear + " is a leap year.");
 }
-else{
-    console.log("The year " + givenYear + " is/was not a leap year.");
+else if(isLeapYear == true && givenYear < 2023){
+    console.log("The year " + givenYear + " was a leap year.");
+}
+else if(isLeapYear == false && givenYear >= 2023){
+    console.log("The year " + givenYear + " is not a leap year.");
+}
+else if(isLeapYear == false && givenYear < 2023){
+    console.log("The year " + givenYear + " was not a leap year.");
 }
