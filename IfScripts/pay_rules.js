@@ -1,9 +1,8 @@
 //Create a script to calculate gross pay given the variables payRate and hoursWorked.
 //If the person works more than 40 hours, pay the overtime hours at 1.5x the regular rate.
 
-//using $25 as a payRate and working 55 hours.
-let payRate = 25;
-let hoursWorked = 44;
+let payRate = 12.50;
+let hoursWorked = 20;
 var grossPay;
 
 if (hoursWorked > 40) {
@@ -16,5 +15,5 @@ else {
     grossPay = (payRate * hoursWorked).toFixed(2);
 }
 
-console.log("At a pay rate of $" + payRate + ", you earned $" + grossPay +
+console.log("At a pay rate of $" + payRate.toFixed(2) + ", you earned $" + grossPay+
     " after working " + hoursWorked + " hours.");
