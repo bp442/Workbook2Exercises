@@ -12,5 +12,6 @@ function onGreetUserBtnClicked(){
 
     const helloString = "Hello " + userName;
 
-    alert(helloString);
+    const outputH1 = document.getElementById("outputH1");
+    outputH1.innerHTML = helloString;
 }
